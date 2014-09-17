@@ -1,0 +1,16 @@
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\TodoTasks.Data.dll.config
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\TodoTasks.Data.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\TodoTasks.Data.pdb
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\EntityFramework.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\TodoTasks.Models.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\TodoTasks.Models.pdb
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\EntityFramework.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\obj\Debug\TodoTasks.Data.csprojResolveAssemblyReference.cache
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\obj\Debug\TodoTasks.Data.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Data\obj\Debug\TodoTasks.Data.pdb

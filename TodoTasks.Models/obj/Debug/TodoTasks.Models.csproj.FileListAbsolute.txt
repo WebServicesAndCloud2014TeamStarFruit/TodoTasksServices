@@ -1,0 +1,14 @@
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\TodoTasks.Models.dll.config
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\TodoTasks.Models.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\TodoTasks.Models.pdb
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\EntityFramework.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\EntityFramework.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\obj\Debug\TodoTasks.Models.dll
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\obj\Debug\TodoTasks.Models.pdb
+E:\Users\Kalina\Documents\Visual Studio 2013\Projects\WebSevices\WebServicesTeamProject\TodoTasks.Models\obj\Debug\TodoTasks.Models.csprojResolveAssemblyReference.cache
