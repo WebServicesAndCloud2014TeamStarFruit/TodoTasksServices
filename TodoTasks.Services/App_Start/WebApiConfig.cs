@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.OData.Extensions;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using System.Web.Http.Cors;
 
 namespace TodoTasks.Services
 {
@@ -20,7 +21,7 @@ namespace TodoTasks.Services
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-            config.EnableCors();
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
             config.AddODataQueryFilter();
 
             config.Routes.MapHttpRoute(
