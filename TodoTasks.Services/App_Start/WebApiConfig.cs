@@ -19,10 +19,6 @@ namespace TodoTasks.Services
 
 			// Web API routes
 			config.MapHttpAttributeRoutes();
-
-			var corsAttribute = new EnableCorsAttribute("http://localhost:11615", "*", "*");
-			config.EnableCors(corsAttribute);
-
 			config.AddODataQueryFilter();
 
 			config.Routes.MapHttpRoute(
