@@ -172,3 +172,11 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/TodoTask.ConsoleClient/obj
+/TodoTask.ConsoleClient/bin
+/TodoTasks.Data/bin
+/TodoTasks.Data/obj
+/TodoTasks.Models/obj
+/TodoTasks.Models/bin
+/TodoTasks.Services/obj
+/TodoTasks.Services/bin
