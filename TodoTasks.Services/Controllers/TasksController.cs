@@ -13,6 +13,7 @@
     using TodoTasks.Data;
     using TodoTasks.Models;
     using TodoTasks.Services.Models;
+    using TodoTasks.Pubnub;
 
     [Authorize]
     public class TasksController : ApiController
@@ -109,6 +110,8 @@
                     .Select(TaskModel.FromTask)
                     .FirstOrDefault();
 
+            var notifier = NotificationCreator.Instance;
+            notifier.AddTaskNotification(task.Content, newTask.CreationDate);
             return this.Ok(taskDataModel);
         }
 
@@ -138,7 +141,8 @@
             existingTask.Content = task.Content;
             existingTask.Deadline = task.Deadline;
             this.data.SaveChanges();
-
+            var notifier = NotificationCreator.Instance;
+            notifier.ChangeTaskNotification(existingTask.Content, task.Content);
             task.Id = id;
             return Ok(task);
         }
@@ -153,9 +157,10 @@
                 return BadRequest("Such task does not exist!");
             }
 
+            var notifier = NotificationCreator.Instance;
+            notifier.DeleteTaskNotification(existingTask.Content);
             this.data.Tasks.Delete(existingTask);
             this.data.SaveChanges();
-
             return Ok();
         }
     }

@@ -344,6 +344,10 @@
       <Project>{a266496b-289c-4417-9a1d-54ff6664308f}</Project>
       <Name>TodoTasks.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TodoTasks.Pubnub\TodoTasks.Pubnub.csproj">
+      <Project>{b3140565-df61-48d8-952c-4a263a438951}</Project>
+      <Name>TodoTasks.Pubnub</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
