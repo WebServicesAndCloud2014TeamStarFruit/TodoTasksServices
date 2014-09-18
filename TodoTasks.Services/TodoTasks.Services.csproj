@@ -231,6 +231,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\GoogleDriveController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,6 +287,10 @@
     <ProjectReference Include="..\TodoTasks.Data\TodoTasks.Data.csproj">
       <Project>{0b57b589-a4ee-411b-aa9a-ed4fbb86860b}</Project>
       <Name>TodoTasks.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TodoTasks.FileExporter\TodoTasks.FileExporter.csproj">
+      <Project>{c020d967-aab4-4875-8b67-8858905e2db6}</Project>
+      <Name>TodoTasks.FileExporter</Name>
     </ProjectReference>
     <ProjectReference Include="..\TodoTasks.Models\TodoTasks.Models.csproj">
       <Project>{a266496b-289c-4417-9a1d-54ff6664308f}</Project>

@@ -101,10 +101,6 @@
       <Project>{a266496b-289c-4417-9a1d-54ff6664308f}</Project>
       <Name>TodoTasks.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TodoTasks.Services\TodoTasks.Services.csproj">
-      <Project>{4c7ef50e-6fa7-4c49-b966-c1ae5403928f}</Project>
-      <Name>TodoTasks.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

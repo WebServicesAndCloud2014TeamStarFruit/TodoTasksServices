@@ -7,13 +7,13 @@
 
     using OfficeOpenXml;
     using OfficeOpenXml.Style;
-    using TodoTasks.Services.Models;
+    using TodoTasks.Data;
 
     public static class ExcelFileCreator
     {
-        public static void ExportReportToXlsxFile(ICollection<TaskModel> tasks, string userId)
+        public static void ExportReportToXlsxFile(ITodoTasksData data, string userId)
         {
-
+            var tasks = data.Tasks.All().Where(t => t.Category.UserId == userId);
 
             var newFile = new FileInfo(@".\" + userId + ".xlsx");
             if (newFile.Exists)
