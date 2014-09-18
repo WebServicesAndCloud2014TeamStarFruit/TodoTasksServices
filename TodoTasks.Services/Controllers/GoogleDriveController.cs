@@ -9,7 +9,7 @@
     using TodoTasks.FileExporter;
     using Microsoft.AspNet.Identity;
 
-    [Authorize]
+    //[Authorize]
     public class GoogleDriveController : ApiController
     {
         private readonly ITodoTasksData data;
@@ -29,6 +29,7 @@
         {
             var userId = User.Identity.GetUserId();
             ExcelFileCreator.ExportReportToXlsxFile(this.data, userId);
+            GoogleDriveFileExporter.UploadFile();
             return Ok();
         }
     }
