@@ -19,7 +19,6 @@ namespace TodoTasks.Services
 
 			// Web API routes
 			config.MapHttpAttributeRoutes();
-			config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
 			config.AddODataQueryFilter();
 
 			config.Routes.MapHttpRoute(
