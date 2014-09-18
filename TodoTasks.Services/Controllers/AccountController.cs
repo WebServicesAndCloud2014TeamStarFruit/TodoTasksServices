@@ -17,11 +17,13 @@ using TodoTasks.Services.Models;
 using TodoTasks.Services.Providers;
 using TodoTasks.Services.Results;
 using TodoTasks.Models;
+using System.Web.Http.Cors;
 
 namespace TodoTasks.Services.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
+	[EnableCors("*", "*", "*")]
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";
