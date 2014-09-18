@@ -15,7 +15,8 @@
         {
             var tasks = data.Tasks.All().Where(t => t.Category.UserId == userId);
 
-            var newFile = new FileInfo(@".\" + userId + ".xlsx");
+            //var newFile = new FileInfo(@".\" + userId + ".xlsx");
+            var newFile = new FileInfo("../../15.xlsx");
             if (newFile.Exists)
             {
                 newFile.Delete();

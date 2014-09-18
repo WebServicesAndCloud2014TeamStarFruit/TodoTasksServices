@@ -13,7 +13,7 @@
 
     public static class GoogleDriveFileExporter 
     {
-        private const string SERVICE_ACCOUNT_PKCS12_FILE_PATH = @".\My Project-69d8888d8990.p12";
+        private const string SERVICE_ACCOUNT_PKCS12_FILE_PATH = @"../../My Project-69d8888d8990.p12";
         private const string SERVICE_ACCOUNT_EMAIL = @"699545407731-a12caj72eb9hj9mafgckndk2l5dpo1av@developer.gserviceaccount.com";
         
         static DriveService BuildService()
@@ -37,7 +37,7 @@
             return service;
         }
 
-        static void UploadFile()
+        public static void UploadFile()
         {
             var service = GoogleDriveFileExporter.BuildService();
 
@@ -46,7 +46,7 @@
             body.Description = "A test document";
             body.MimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
-            byte[] byteArray = System.IO.File.ReadAllBytes("document.txt");
+            byte[] byteArray = System.IO.File.ReadAllBytes("../../15.xlsx");
             System.IO.MemoryStream stream = new System.IO.MemoryStream(byteArray);
 
             FilesResource.InsertMediaUpload request = service.Files.Insert(body, stream, "text/plain");
