@@ -63,6 +63,25 @@
             return Ok(task);
         }
 
+        [HttpGet]
+        public IHttpActionResult FilterByCategory(int categoryId)
+        {
+            var userId = User.Identity.GetUserId();
+            var tasks = this.data
+                .Tasks
+                .All()
+                .Where(t => t.Category.UserId == userId)
+                .Where(t => t.CategoryId == categoryId)
+                .Select(TaskModel.FromTask);
+
+            if (tasks == null)
+            {
+                return BadRequest("Category does not exist - invalid id");
+            }
+
+            return Ok(tasks);
+        }
+
         [HttpPost]
         public IHttpActionResult Create(TaskModel task)
         {
