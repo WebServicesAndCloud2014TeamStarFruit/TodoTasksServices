@@ -15,7 +15,7 @@
         {
 
 
-            var newFile = new FileInfo(@"..\..\..\Reports\ExcelReports\Profits report.xlsx");
+            var newFile = new FileInfo(@".\" + userId + ".xlsx");
             if (newFile.Exists)
             {
                 newFile.Delete();
@@ -25,53 +25,28 @@
 
             using (xlPackage)
             {
-                ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("Profit report");
+                ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("To do tasks");
 
-                worksheet.Cells[1, 1].Value = "Product code";
-                worksheet.Cells[1, 2].Value = "Product name";
-                worksheet.Cells[1, 3].Value = "Sold in";
-                worksheet.Cells[1, 4].Value = "Incomes";
-                worksheet.Cells[1, 5].Value = "Taxes";
+                worksheet.Cells[1, 1].Value = "No:";
+                worksheet.Cells[1, 2].Value = "Task";
+                worksheet.Cells[1, 3].Value = "Created on";
+                worksheet.Cells[1, 4].Value = "Deadline";
+                worksheet.Cells[1, 5].Value = "Status";
 
                 var columnsCount = worksheet.Dimension.End.Column;
 
                 var row = 2;
-                //foreach (var product in reportsFromMySQL)
-                //{
-                //    var productTaxAndExpenses = reportsFromSQLite
-                //        .Where(r => r.ProductCode.Equals(product.ProductCode))
-                //        .Select(r => 
-                //            new 
-                //            {
-                //                tax = r.TaxPercent, 
-                //                expenses = r.Expenses
-                //            })
-                //        .FirstOrDefault();
+                var no = 1;
+                foreach (var task in tasks)
+                {
+                    worksheet.Cells[row, 1].Value = no;
+                    worksheet.Cells[row, 2].Value = task.Content;
+                    worksheet.Cells[row, 3].Value = task.CreationDate.ToString();
+                    worksheet.Cells[row, 4].Value = task.Deadline == null ? "No deadline" : task.Deadline.ToString();
+                    worksheet.Cells[row, 5].Value = task.Status == Models.StatusType.Completed ? "Completed" : "Not completed";
 
-                //    double profit;
-                //    int tax;
-                //    double expenses;
-                //    if (productTaxAndExpenses != null)
-                //    {
-                //        tax = productTaxAndExpenses.tax;
-                //        expenses = productTaxAndExpenses.expenses;
-                //        profit = (product.TotalIncomes - (product.TotalIncomes * ((double)tax / 100d))) - expenses;
-                //    }
-                //    else
-                //    {
-                //        tax = 0;
-                //        expenses = 0;
-                //        profit = product.TotalIncomes;
-                //    }
-
-                //    worksheet.Cells[row, 1].Value = product.ProductCode;
-                //    worksheet.Cells[row, 2].Value = product.Name;
-                //    worksheet.Cells[row, 3].Value = (product.ShopNames.Count > 0 ? product.ShopNames[0] : "");
-                //    worksheet.Cells[row, 4].Value = product.TotalIncomes;
-                //    worksheet.Cells[row, 5].Value = tax;
-
-                //    row++;
-                //}
+                    row++;
+                }
 
                 for (int i = 1; i <= columnsCount; i++)
                 {
