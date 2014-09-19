@@ -142,7 +142,7 @@
             existingTask.Deadline = task.Deadline;
             this.data.SaveChanges();
             var notifier = NotificationCreator.Instance;
-            notifier.ChangeTaskNotification(existingTask.Content, task.Content);
+            notifier.ChangeTaskNotification(existingTask.Content, task.Status.ToString());
             task.Id = id;
             return Ok(task);
         }
