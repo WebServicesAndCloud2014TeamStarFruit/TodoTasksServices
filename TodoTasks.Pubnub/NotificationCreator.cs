@@ -37,21 +37,21 @@ namespace TodoTasks.Pubnub
             }
         }
 
-        public void AddTaskNotification(string content, DateTime added)
+        public void AddTaskNotification(string content, DateTime added, string name)
         {
-            var message = String.Format("New task {0} added on {1}", content, added);
+            var message = String.Format("User {0} added new task {1} on {2}", name, content, added);
             pubnub.Publish(channel, message);
         }
 
-        public void ChangeTaskNotification(string content, string newContent)
+        public void ChangeTaskNotification(string content, string newContent, string name)
         {
-            var message = String.Format("Task {0} was changed to {1}", content, newContent);
+            var message = String.Format("User {0} changed task {1} to {2}",name, content, newContent);
             pubnub.Publish(channel, message);
         }
 
-        public void DeleteTaskNotification(string content)
+        public void DeleteTaskNotification(string content, string name)
         {
-            var message = String.Format("Task {0} was deleted", content);
+            var message = String.Format("Task {0} was deleted by {1}", content, name);
             pubnub.Publish(channel, message);
         }
     }
