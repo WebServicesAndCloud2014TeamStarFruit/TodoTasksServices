@@ -14,8 +14,9 @@
     using TodoTasks.Models;
     using TodoTasks.Services.Models;
     using TodoTasks.Pubnub;
+	using System.Web.Http.Cors;
 
-    [Authorize]
+	[Authorize]
     public class TasksController : ApiController
     {
         private readonly ITodoTasksData data;
@@ -111,7 +112,7 @@
                     .FirstOrDefault();
 
             var notifier = NotificationCreator.Instance;
-            notifier.AddTaskNotification(task.Content, newTask.CreationDate);
+            notifier.AddTaskNotification(task.Content, newTask.CreationDate, User.Identity.Name);
             return this.Ok(taskDataModel);
         }
 
@@ -142,7 +143,7 @@
             existingTask.Deadline = task.Deadline;
             this.data.SaveChanges();
             var notifier = NotificationCreator.Instance;
-            notifier.ChangeTaskNotification(existingTask.Content, task.Status.ToString());
+            notifier.ChangeTaskNotification(existingTask.Content, task.Status.ToString(), User.Identity.Name);
             task.Id = id;
             return Ok(task);
         }
@@ -158,7 +159,7 @@
             }
 
             var notifier = NotificationCreator.Instance;
-            notifier.DeleteTaskNotification(existingTask.Content);
+            notifier.DeleteTaskNotification(existingTask.Content, User.Identity.Name);
             this.data.Tasks.Delete(existingTask);
             this.data.SaveChanges();
             return Ok();

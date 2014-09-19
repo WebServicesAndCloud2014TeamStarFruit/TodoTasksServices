@@ -11,6 +11,7 @@ using Owin;
 using TodoTasks.Services.Providers;
 using TodoTasks.Services.Models;
 using TodoTasks.Data;
+using Microsoft.Owin.Cors;
 
 namespace TodoTasks.Services
 {

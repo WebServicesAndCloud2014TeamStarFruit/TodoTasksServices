@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.OData.Extensions;
+using TodoTasks.Services.Providers;
 
 namespace TodoTasks.Services
 {

@@ -13,8 +13,9 @@
     using TodoTasks.Data;
     using TodoTasks.Models;
     using TodoTasks.Services.Models;
+	using System.Web.Http.Cors;
 
-    [Authorize]
+	[Authorize]
     public class CategoriesController : ApiController
     {
         private readonly ITodoTasksData data;
