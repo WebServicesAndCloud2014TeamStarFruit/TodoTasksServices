@@ -115,7 +115,7 @@
             return this.Ok(taskDataModel);
         }
 
-        [HttpPut]
+        [HttpPost]
         public IHttpActionResult Update(Guid id, TaskModel task)
         {
             var userId = User.Identity.GetUserId();
@@ -147,7 +147,7 @@
             return Ok(task);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public IHttpActionResult Delete(Guid id)
         {
             var userId = User.Identity.GetUserId();

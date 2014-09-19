@@ -84,7 +84,7 @@
             return this.Ok(categoryDataModel);
         }
 
-        [HttpPut]
+        [HttpPost]
         public IHttpActionResult Update(int id, CategoryModel category)
         {
             if (!this.ModelState.IsValid)
@@ -105,7 +105,7 @@
             return Ok(category);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public IHttpActionResult Delete(int id)
         {
             var existingCategory = this.data.Categories.All().FirstOrDefault(c => c.Id == id);
