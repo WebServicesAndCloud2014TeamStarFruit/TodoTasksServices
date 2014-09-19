@@ -14,8 +14,9 @@
     using TodoTasks.Models;
     using TodoTasks.Services.Models;
     using TodoTasks.Pubnub;
+	using System.Web.Http.Cors;
 
-    [Authorize]
+	[Authorize]
     public class TasksController : ApiController
     {
         private readonly ITodoTasksData data;
