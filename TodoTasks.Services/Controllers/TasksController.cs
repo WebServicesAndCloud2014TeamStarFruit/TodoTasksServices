@@ -38,7 +38,8 @@
                 .Tasks
                 .All()
                 .Where(t => t.Category.UserId == userId)
-                .Select(TaskModel.FromTask);
+                .Select(TaskModel.FromTask)
+                .OrderByDescending(t => t.CreationDate);
 
             return Ok(tasks);
         }
