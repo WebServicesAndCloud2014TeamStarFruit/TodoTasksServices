@@ -12,17 +12,11 @@ namespace TodoTasks.Services
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-			//routes.MapRoute(
-			//	name: "Default",
-			//	url: "{controller}/{action}/{id}",
-			//	defaults: new { controller = "Help", action = "Index", id = UrlParameter.Optional }
-			//).DataTokens = new RouteValueDictionary(new { area = "HelpPage" });
-
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-			);
+				defaults: new { controller = "Help", action = "Index", id = UrlParameter.Optional }
+			).DataTokens = new RouteValueDictionary(new { area = "HelpPage" });
 		}
 	}
 }
